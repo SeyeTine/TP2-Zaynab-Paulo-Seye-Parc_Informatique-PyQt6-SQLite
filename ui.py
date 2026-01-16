@@ -1,9 +1,5 @@
-"""
-===========================================
-FICHIER: ui/fenetre_principale.py
-Interface graphique principale
-===========================================
-"""
+# Interface graphique principale
+
 
 from PyQt6.QtWidgets import (QWidget, QPushButton, QLineEdit, QTableWidget,
                              QTableWidgetItem, QLabel, QMessageBox)
@@ -205,6 +201,6 @@ class FenetrePrincipale(QWidget):
                 self.line_edits[j].setText(str(resultats[row][j + 1]))
 
     def vider_champs(self):
-        """Vider tous les champs de saisie"""
+        """Vider tous les champs de saisi"""
         for le in self.line_edits:
             le.clear()
