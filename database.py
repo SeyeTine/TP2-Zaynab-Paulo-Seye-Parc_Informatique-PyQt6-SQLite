@@ -10,7 +10,7 @@ def CreerTable():
     cursor.execute("""CREATE TABLE IF NOT EXISTS ParcInformatique
                    (ID INTEGER PRIMARY KEY
                        AUTOINCREMENT,
-                       NomPoste TEXT NOT ULL,
+                       NomPoste TEXT NOT NULL,
                        Utilisateur TEXT NOT NULL,
                        Systeme TEXT NOT NULL,
                        AdresseIP TEXT NOT NULL);
